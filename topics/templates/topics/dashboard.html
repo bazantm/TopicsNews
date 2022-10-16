@@ -1,0 +1,31 @@
+{% extends 'topics/main.html' %}
+
+{% block content %}
+    <br>
+    <div class="row">
+        <div class="col-md-9">
+            <h5>TOPICS</h5>
+            <hr>
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <tr>
+                        <th>Topic</th>
+                        <th>Number of messages</th>
+                        <th>Topic index</th>
+                        <th>Graph</th>
+                    </tr>
+
+                    {% for topic in topicNameCountValueSum %}
+                        <tr>
+                            <td><a href="{% url 'topic' topic.topic.id %}">{{ topic.topicName }}</a></td>
+                            <td>{{ topic.count }}</td>
+                            <td>{{ topic.valueSum|floatformat:2 }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock content %}

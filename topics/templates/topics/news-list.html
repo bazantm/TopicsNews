@@ -1,0 +1,36 @@
+{% extends 'topics/main.html' %}
+
+{% block content %}
+    <br>
+
+    <div class="row">
+        <div class="col-md-9">
+            <h5>NEWS</h5>
+            <hr>
+            <div class="card card-body">
+                <table class="table table-sm">
+                    <tr>
+                        <th>Graph</th>
+                    </tr>
+                    <tr>
+                        <th>News - measure</th>
+                        <th>News test</th>
+                        <th>News - topic</th>
+                        <th>News - source</th>
+                    </tr>
+                    {% for new in news %}
+                        <tr>
+                            <td>{{ new.value }}</td>
+                            <td>{{ new.text }}</td>
+                            <td>{{ new.topic }}</td>
+                            <td>{{ new.source }}</td>
+                            <td>{{ new.date_created }}</td>
+                        </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
