@@ -1,0 +1,23 @@
+[
+  {
+    "model": "topics.Topic",
+    "pk": 1,
+    "fields": {
+      "name": "Macro"
+    }
+  },
+  {
+    "model": "topics.Topic",
+    "pk": 2,
+    "fields": {
+      "name": "Ukraine Russia conflict"
+    }
+  },
+  {
+    "model": "topics.Topic",
+    "pk": 3,
+    "fields": {
+      "name": "COVID-19"
+    }
+  }
+]
