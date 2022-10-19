@@ -1,0 +1,32 @@
+[
+  {
+    "model": "topics.New",
+    "pk": 1,
+    "fields": {
+      "topic": "1",
+	  "source": "Bloomberg",
+	  "text": "Macro News 01",
+	  "value": "0.15"
+    }
+  },
+  {
+    "model": "topics.New",
+    "pk": 2,
+    "fields": {
+      "topic": "2",
+	  "source": "TASS",
+	  "text": "Ukraine Russia conflict news 01",
+	  "value": "-0.35"	  
+    }
+  },
+  {
+    "model": "topics.New",
+    "pk": 3,
+    "fields": {
+      "topic": "3",
+	  "source": "Squawk",
+	  "text": "COVID-19 news 01",
+	  "value": "0.85"
+    }
+  }
+]
